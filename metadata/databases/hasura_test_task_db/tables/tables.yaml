@@ -1,0 +1,6 @@
+- "!include public_author.yaml"
+- "!include public_collection.yaml"
+- "!include public_image.yaml"
+- "!include public_image_tag.yaml"
+- "!include public_search_images.yaml"
+- "!include public_tag.yaml"

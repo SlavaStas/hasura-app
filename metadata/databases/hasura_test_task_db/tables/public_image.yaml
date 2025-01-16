@@ -1,0 +1,62 @@
+table:
+  name: image
+  schema: public
+insert_permissions:
+  - role: author
+    permission:
+      check:
+        author_id:
+          _eq: X
+      columns:
+        - status
+        - url
+        - created_at
+        - author_id
+        - collection_id
+        - id
+    comment: ""
+select_permissions:
+  - role: author
+    permission:
+      columns:
+        - status
+        - url
+        - created_at
+        - author_id
+        - collection_id
+        - id
+      filter: {}
+    comment: ""
+  - role: public
+    permission:
+      columns:
+        - status
+        - url
+        - created_at
+        - author_id
+        - collection_id
+        - id
+      filter: {}
+    comment: ""
+update_permissions:
+  - role: author
+    permission:
+      columns:
+        - status
+        - url
+        - created_at
+        - author_id
+        - collection_id
+        - id
+      filter:
+        author_id:
+          _eq: X
+      check: null
+    comment: ""
+delete_permissions:
+  - role: author
+    permission:
+      filter:
+        author_id:
+          _eq: X
+    comment: ""

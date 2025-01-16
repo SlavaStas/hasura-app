@@ -1,0 +1,3 @@
+table:
+  name: search_images
+  schema: public
