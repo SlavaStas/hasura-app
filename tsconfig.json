@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "baseUrl": "."
+  },
+  "include": [
+    "server/**/*.ts",
+    "server/types/**/*.d.ts"  // Указываем путь до наших типизаций
+  ],
+  "exclude": ["node_modules"]
+}

@@ -1,4 +1,13 @@
-actions: []
+actions:
+  - name: uploadImage
+    definition:
+      kind: synchronous
+      handler: http://localhost:3000/api/upload
+      arguments:
+        - name: image
+          type: String
+      output_type: String
+    comment: "Action for uploading images to an external service"
 custom_types:
   enums: []
   input_objects: []
